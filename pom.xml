@@ -27,12 +27,12 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <stash.version>2.6.0</stash.version>
-        <stash.data.version>2.6.0</stash.data.version>
-        <amps.version>4.2.20</amps.version>
-        <plugin.testrunner.version>1.1.7</plugin.testrunner.version>
+        <stash.version>3.0.1</stash.version>
+        <stash.data.version>3.0.1</stash.data.version>
+        <amps.version>5.0-m2</amps.version>
+        <plugin.testrunner.version>1.2.0</plugin.testrunner.version>
 
-        <junit.version>4.10</junit.version>
+        <junit.version>4.11</junit.version>
         <common-lang.version>2.6</common-lang.version>
         <plugin.compiler.version>3.1</plugin.compiler.version>
         <mockito.version>1.8.5</mockito.version>
@@ -95,6 +95,16 @@
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
             <version>${common-lang.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.atlassian.sal</groupId>
+            <artifactId>sal-api</artifactId>
+            <scope>provided</scope>
         </dependency>
 
         <!-- WIRED TEST RUNNER DEPENDENCIES -->
